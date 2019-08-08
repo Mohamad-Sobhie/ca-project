@@ -5,21 +5,28 @@ import requests
 # Authentication for user filing issue (must have read/write access to
 # repository to add issue to)
 <<<<<<< HEAD
+<<<<<<< HEAD
+USERNAME = 'nimaeivazzadeh'
+=======
 USERNAME = 'hassansamat'
 PASSWORD = os.environ['GITHUB_PASSWORD']
+>>>>>>> d85b0f274176c29ca1e705798a1ce3d776bc8612
 =======
 <<<<<<< HEAD
 USERNAME = 's336378'
 EXPORT_PASSWORD = os.environ['GITHUB_PASSWORD']
 =======
 USERNAME = 'Mohamad-Sobhie'
+>>>>>>> 120801921d771d2f92f2d3f5896c8c359ae336a2
 PASSWORD = os.environ['GITHUB_PASSWORD']
 >>>>>>> 113b53c3bd4d6455c4e7f3c7f17b314bbb2c9131
 >>>>>>> 22c8f5905dd1ce86aad69f61b1eda7aa4bce2d9d
 
+
 # The repository to add this issue to
 REPO_OWNER = 'Mohamad-Sobhie'
 REPO_NAME = 'ca-project'
+
 
 def make_github_issue(title, body=None, labels=None):
     '''Create an issue on github.com using the given parameters.'''
