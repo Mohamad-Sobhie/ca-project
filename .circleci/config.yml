@@ -1,11 +1,14 @@
+
 version: 2.0
 jobs:
   build:
-    docker:
-      - image: alpine:3.7
-    steps:
-      - run:
-          name: The First Step
-          command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
+    dockerize:
+      machine: true
+      steps:
+        - checkout
+        #login to docker
+        - run: docker login -u nabadoon -p Shadia12#
+        #Build the application image
+        - run: docker buid -t nabadoon/myapplication:$CIRCLE_SHA1 .
+        #deploy the image
+        - run: docker push nabadoon/myapp:$CIRCLE_SHA1
