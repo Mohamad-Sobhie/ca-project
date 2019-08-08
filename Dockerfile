@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+FROM python:3.6
+=======
 FROM ubuntu
+>>>>>>> d85b0f274176c29ca1e705798a1ce3d776bc8612
 MAINTAINER Team-Nano
 ADD . /code
 WORKDIR /code
