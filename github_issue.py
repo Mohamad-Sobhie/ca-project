@@ -4,8 +4,13 @@ import requests
 
 # Authentication for user filing issue (must have read/write access to
 # repository to add issue to)
+<<<<<<< HEAD
+USERNAME = 's336378'
+EXPORT_PASSWORD = os.environ['GITHUB_PASSWORD']
+=======
 USERNAME = 'Mohamad-Sobhie'
 PASSWORD = os.environ['GITHUB_PASSWORD']
+>>>>>>> 113b53c3bd4d6455c4e7f3c7f17b314bbb2c9131
 
 # The repository to add this issue to
 REPO_OWNER = 'Mohamad-Sobhie'
