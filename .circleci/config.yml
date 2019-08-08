@@ -4,7 +4,7 @@ dockerize:
   machine: true
   steps:
     - checkout
-    # Login to docker
+    # Login to docker ..
     - image: docker login -u $DOCKER_USER -p $DOCKER_PASS
     # build the application image
     - run: docker build -t $DOCKER_USER/myapp:$CIRCLE_SHA1 .
