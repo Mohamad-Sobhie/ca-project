@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM python:3.6
 MAINTAINER Team-Nano
 ADD . /code
 WORKDIR /code
