@@ -1,4 +1,7 @@
 Flask
 flask_wtf
 flask_sqlalchemy
+<<<<<<< HEAD
 
+=======
+>>>>>>> 60d67a8df8733b1b353f5bdae591c0d6455af58b
